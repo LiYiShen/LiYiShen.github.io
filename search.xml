@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Golden Age]]></title>
+    <url>%2F2018%2F11%2F20%2FGolden%20Age%2F</url>
+    <content type="text"><![CDATA[已是去时独自语，欲语还休❤ 大学是一片梦中海，我们从不同的河游入其中，带着向往，带着好奇，也带着未知。 曾几何时，这玩意儿在耳边响起，便一刻也没消停，牛鬼蛇神皆如此言，说者意味深长，听者不以为意。因缘巧合，有的人来了，有的人没有。至者片刻欢喜，不至者片刻忧伤，但所思所想遂变。总的来说，人可以适应任何一种气氛，虽然需要一点时间。正如每个人都有自己的命运，你别无选择。 我们仅是海中鱼，所见所经历便印在心里。我也不知何因到了这里，茫茫大海，也遇见了形形色色的人，真真假假，不觉时间也在喧嚣声中走过。这是个人欲横流的社会，无奇不有，故无足为奇。在这样的大家庭里，大家抬头不见低头见，总会有许多共同的想法。我们总说人艰不拆，但每个人又总觉得自己亏，而别人都欠揍，于是我们怀着一个善良的愿望，就是盼天上掉下个大磨盘，把自己剩在磨眼里，把别人都砸死。虽然我们也常常感到累，有的人累的久了，便把它当做幸福，然后享受它并视为生活，但也并非所有人都能如此。我们都站在一个迷宫面前，前面有很多的线索，很多岔路，谁也看不清什么，偏又总以为无所不知。少一点恶意，多一点诗意，大学的存在，不过是等待故事的开始和讲故事的人而已。曲终人散。 四年时间里，零零碎碎学了一些东西，却好像丢下了更多，不知学为何。其实我觉得学习并非他人所授，也非社会所求，此乃本能，如同成长一般，我们都该做自己的老师。能力强弱，影响甚多，想或不想，无足轻重，毕竟我们都只是一条小小的鱼，离不开的是水，不是大海。君主想主宰众生，圣人想拯救百姓。有的话做得说不得。明心见性，我思故我在。我们的存在乃是不争事实，其本身便有极大魅力，无需任何证明。正如深山里花开，龙竹笋剥剥地爆去笋壳，直翘翘地向上。 我也时常害怕未知，但是每天清晨醒来不都是新的一天，新的未知吗？因为有的时候我感觉是梦，所以四年里给大家留下了什么印象，现在也不负责任，梦里梦外不知谁更怪！ 尘世嚣嚣，我们不管做什么，都困难重重。以后如何，无人知晓。这是一个梦，一个故事，要慢慢渗透。 最后摘一段话： 天色微微向晚，天上飘着懒洋洋的云彩。下半截沉在黑暗里，上半截仍浮在阳光中。那一天我二十一岁，在我一生的黄金时代。我有好多奢望。我想爱，想吃，还想在一瞬间变成天上半明半暗的云。后来我才知道，生活就是个缓慢受锤的过程，人一天天老下去，奢望也一天天消失，最后变得像挨了锤的牛一样。生活，不该如此；生活，正是如此.]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>think</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Git]]></title>
+    <url>%2F2017%2F11%2F20%2FGit%2F</url>
+    <content type="text"><![CDATA[Git简述 Git 只关心文件数据的整体是否发生变化，而大多数其他系统则只关心文件内容的具体差异。 保存到 Git 之前，所有数据都要进行内容的校验和（checksum）计算，并将此结果作为数据的唯一标识和索引。 Git 使用 SHA-1 算法计算数据的校验和，通过对文件的内容或目录的结构计算出一个 SHA-1 哈希值，作为指纹字符串。该字串由 40 个十六进制字符(0-9 及 a-f)组成。所有保存在 Git 数据库中的内容都用此哈希值作索引，而不是靠文件名。 任何一个文件，在 Git 内都只有三种状态：已提交（committed），已修改（modified）和已暂存（staged）。已提交表示该文件已经被安全地保存在本地数据库；已修改表示修改了某个文件，但还没有提交保存；已暂存表示把已修改的文件放在下次提交时要保存的清单中。 Git 基本流程： 在工作目录中修改某些文件。 对修改后的文件进行快照，然后保存到暂存区域。 提交更新，将保存在暂存区域的文件快照永久转储到 Git 目录。 配置个人用户名和电子邮件地址(表明谁提交了更新) $ git config --global user.name &quot;John Doe&quot; $ git config --global user.email johndoe@example.com 查看配置信息 $ git config --list 获取帮助 $ git help &lt;verb&gt; $ git &lt;verb&gt; --help $ man git-&lt;verb&gt; 对现有的某个项目开始用 Git 管理，只需到此项目所在的目录初始化： $ git init 如果当前目录下有几个文件想要纳入版本控制，先用 git add 命令告诉 Git 开始对这些文件进行跟踪，然后提交： $ git add *.c # 加文件名表示跟踪 $ git add README $ git commit -m &apos;initial project version&apos; 克隆仓库： git clone [url] $ git clone git://github.com/schacon/grit.git 检查当前文件状态：(工作目录的所有文件都不外乎两种状态：已跟踪或未跟踪。) $ git status On branch master nothing to commit, working directory clean git add ：根据目标文件的状态不同，此命令的效果也不同。可以用它开始跟踪新文件，或者把已跟踪的文件放到暂存区，还能用于合并时把有冲突的文件标记为已解决状态等。 忽略某些文件 有些文件无需纳入 Git 管理，也不希望它们总出现在未跟踪文件列表。通常都是些自动生成的文件，比如日志文件，或者编译过程中创建的临时文件等。可以创建一个名为 .gitignore 的文件，列出要忽略的文件模式。 $ cat .gitignore *.[oa] *~ 文件 .gitignore 的格式规范如下： 所有空行或者以注释符号 ＃ 开头的行都会被 Git 忽略。 可以使用标准的 glob 模式匹配。 匹配模式最后跟反斜杠（/）说明要忽略的是目录。 要忽略指定模式以外的文件或目录，可以在模式前加上惊叹号（!）取反。 例子： #### 此为注释 – 将被 Git 忽略 # 忽略所有 .a 结尾的文件 *.a # 但 lib.a 除外 !lib.a # 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO /TODO # 忽略 build/ 目录下的所有文件 build/ # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt doc/*.txt # ignore all .txt files in the doc/ directory doc/**/*.txt 查看尚未暂存的文件更新了哪些部分，不加参数直接输入 $ git diff 查看已经暂存起来的文件和上次提交时的快照之间的差异 $ git diff --cached 提交更新(先git status看是否都暂存了)： $ git commit -m &quot;Story 182: Fix benchmarks for speed&quot; #说明 在提交的时候，给 git commit 加上 -a 选项，Git 就会自动把所有已经跟踪过的文件暂存起来一并提交，从而跳过 git add 步骤. 移除文件： 要从 Git 中移除某个文件，就必须要从已跟踪文件清单中移除（确切地说，是从暂存区域移除），然后提交。可以用 git rm 命令完成此项工作，并连带从工作目录中删除指定的文件，这样以后就不会出现在未跟踪文件清单中了。最后提交的时候，该文件就不再纳入版本管理了。如果删除之前修改过并且已经放到暂存区域的话，则必须要用强制删除选项 -f 另外一种情况是，我们想把文件从 Git 仓库中删除（亦即从暂存区域移除），但仍然希望保留在当前工作目录中。换句话说，仅是从跟踪清单中删除。比如一些大型日志文件或者一堆 .a 编译文件，不小心纳入仓库后，要移除跟踪但不删除文件，以便稍后在 .gitignore 文件中补上，用 --cached 选项即可： $ git rm --cached readme.txt 后面可以列出文件或者目录的名字，也可以使用 glob 模式。比方说： $ git rm log/\*.log 注意到星号 * 之前的反斜杠 \，因为 Git 有它自己的文件模式扩展匹配方式，所以我们不用 shell 来帮忙展开（译注：实际上不加反斜杠也可以运行，只不过按照 shell 扩展的话，仅仅删除指定目录下的文件而不会递归匹配。上面的例子本来就指定了目录，所以效果等同，但下面的例子就会用递归方式匹配，所以必须加反斜杠。）。此命令删除所有 log/ 目录下扩展名为 .log 的文件。类似的比如： $ git rm \*~ 会递归删除当前目录及其子目录中所有 ~ 结尾的文件。 移动文件$ git mv file_from file_to 其实，运行 git mv 就相当于运行了下面三条命令： $ mv README.txt README $ git rm README.txt $ git add README 常用： git init git remote add origin git status git add git commit -m git push git pull origin master:master git push -u origin master]]></content>
+      <categories>
+        <category>record</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[test]]></title>
+    <url>%2F2017%2F10%2F12%2FTest%2F</url>
+    <content type="text"><![CDATA[这是一篇测试文章，欢迎关注作者博客[1]: https://liyishen.github.io/ 我们好像在池塘的水底，从一个月亮走向另一个月亮。]]></content>
+      <categories>
+        <category>搭建博客</category>
+      </categories>
+      <tags>
+        <tag>test</tag>
+        <tag>hexo</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[The use of Hexo]]></title>
+    <url>%2F2017%2F10%2F11%2FThe%20use%20of%20Hexo%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartInitialize1$ hexo init Create a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment Clean cache1$ hexo clean]]></content>
+  </entry>
+</search>
