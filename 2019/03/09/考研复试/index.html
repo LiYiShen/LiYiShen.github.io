@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入密码') !== ''){
+                alert('密码错误');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+  
+
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+  <link rel="manifest" href="/images/manifest.json">
+
+
+  <meta name="msapplication-config" content="/images/browserconfig.xml" />
+
+
+
+  <meta name="keywords" content="think," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="数据库：  数据库保护、访问的内容有哪些：利用权限机制和完整性约束防止非法数据进入数据库；提供故障恢复能力和并发访问控制。 DBA的职责：管理和控制数据库系统。决定数据库中存放信息的内容和结构；决定数据库的存储结构和存取策略；定义数据的安全性要求和完整性约束条件；监控数据库的使用和运行；改进和重构数据库。 数据库系统和文件系统相比有何特点：共享性高、冗余度小；采用数据模型描述，整体结构化；由数据库">
+<meta name="keywords" content="think">
+<meta property="og:type" content="article">
+<meta property="og:title" content="考研复试">
+<meta property="og:url" content="https://liyishen.github.io/2019/03/09/考研复试/index.html">
+<meta property="og:site_name" content="小鱼小鱼别皱眉">
+<meta property="og:description" content="数据库：  数据库保护、访问的内容有哪些：利用权限机制和完整性约束防止非法数据进入数据库；提供故障恢复能力和并发访问控制。 DBA的职责：管理和控制数据库系统。决定数据库中存放信息的内容和结构；决定数据库的存储结构和存取策略；定义数据的安全性要求和完整性约束条件；监控数据库的使用和运行；改进和重构数据库。 数据库系统和文件系统相比有何特点：共享性高、冗余度小；采用数据模型描述，整体结构化；由数据库">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-05-03T15:03:57.066Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="考研复试">
+<meta name="twitter:description" content="数据库：  数据库保护、访问的内容有哪些：利用权限机制和完整性约束防止非法数据进入数据库；提供故障恢复能力和并发访问控制。 DBA的职责：管理和控制数据库系统。决定数据库中存放信息的内容和结构；决定数据库的存储结构和存取策略；定义数据的安全性要求和完整性约束条件；监控数据库的使用和运行；改进和重构数据库。 数据库系统和文件系统相比有何特点：共享性高、冗余度小；采用数据模型描述，整体结构化；由数据库">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://liyishen.github.io/2019/03/09/考研复试/"/>
+
+
+
+
+
+  <title>考研复试 | 小鱼小鱼别皱眉</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?6990675673062d7dc08c39a0ffb87a58";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband">
+     <!--  <a href="https://github.com/LiYiShen"><img width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_red_aa0000.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a> -->
+    </div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">小鱼小鱼别皱眉</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">生活、技术个人博客</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://liyishen.github.io/2019/03/09/考研复试/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="feiyue">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小鱼小鱼别皱眉">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">考研复试</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-09T21:49:02+08:00">
+                2019-03-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/record/" itemprop="url" rel="index">
+                    <span itemprop="name">record</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/03/09/考研复试/" class="leancloud_visitors" data-flag-title="考研复试">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  4,867 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  17 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><strong>数据库：</strong></p>
+<ol>
+<li>数据库保护、访问的内容有哪些：<br>利用权限机制和完整性约束防止非法数据进入数据库；<br>提供故障恢复能力和并发访问控制。</li>
+<li>DBA的职责：<br>管理和控制数据库系统。<br>决定数据库中存放信息的内容和结构；<br>决定数据库的存储结构和存取策略；<br>定义数据的安全性要求和完整性约束条件；<br>监控数据库的使用和运行；<br>改进和重构数据库。</li>
+<li>数据库系统和文件系统相比有何特点：<br>共享性高、冗余度小；<br>采用数据模型描述，整体结构化；<br>由数据库管理系统提供数据安全性、完整性，并发访问控制和故障恢复；<br>具有高度的物理独立性和逻辑独立性；</li>
+<li>什么是完整性约束：<br>完整性约束包含实体完整性、参照完整性、用户自定义完整性；用于确保数据库中数据的正确相容。</li>
+<li>DBMS支持哪几种数据模型：</li>
+<li>SQL(Structured query language)的四个组成部分：<br>数据定义语言、查询语言、数据操纵语言、数据控制语言。</li>
+<li>数据库操纵语言举例：<br>即DML，用户可通过它实现对数据库的基本操作。包含增删改查。</li>
+<li>介绍下有哪些应用数据库：<br>桌面型：Access<br>企业型：SQL Server、MYSQL、Oracle</li>
+<li>什么是数据独立性（数据库的两种独立性）：<br>数据独立性包括数据的物理独立性和逻辑独立性。<br>物理独立性指用户的应用程序与存储在磁盘上的数据库中的数据是相互独立的。即数据在磁盘上怎样存储由DBMS(数据库管理系统)管理，应用程序只处理数据的逻辑结构。当数据的物理存储改变，应用程序不用修改。<br>逻辑独立性指用户的应用程序与数据库的逻辑结构是相互独立的，即当数据库的逻辑结构改变时，用户程序可以不变。</li>
+<li>数据模式：数据库存放数据的模式。以此才能构造复杂的数据结构来建立数据间的联系。<br>1NF：数据库表中字段都是单一属性，不可再分；<br>2NF：不存在非主属性对任一主属性的部分函数依赖；<br>3NF：不存在非主属性对任一主属性的传递函数依赖。<br>BNCF范式：在第三范式的基础上，消除主属性之间的部分函数依赖。</li>
+<li>数据库的关系操作有哪些？各有什么作用？<br>包括查询(query)和插入(insert)、删除(delete)、修改(update)两大部分。<br>查询操作又可以分为选择(select)、投影(project)、连接(join)、除(divide)、并(union)、差(except)、交(intersection)、笛卡儿积等。</li>
+<li>DB并发操作通常带来哪三类问题：<br>丢失修改：当一个事务修改了数据，并且还未提交到数据库时，另一个事务又对同样的数据进行了修改，并且提交到了数据库中。这样，数据库中没有出现第一个事务修改数据的结果，好像这种数据修改丢失了一样。<br>脏读：当一个事务正在访问数据，并对数据进行了修改，且还未提交到数据库时，另一个事务也访问这个数据，且使用了这个数据。因为这个数据是还没有提交的数据，那么另一个事务读到的这个数据是脏数据，依据脏数据所做的操作可能是不正确的。<br>不可重复读：在一个事务内，多次读同一数据。在这个事务还没有结束时，另一个事务也访问同一数据，在第一个事务中的两次读数据之间，由于第二个事务的修改，所读到的数据可能是不一样的。</li>
+<li>两段锁协议：<br>规定所有事务应遵守的规则：<br>在对任何数据进行读、写操作之前，首先要申请并获得对该数据的封锁。<br>在释放一个封锁之后，事务不再申请和获得其它任何封锁。<br>即事务的执行分为两个阶段：<br>第一阶段获得封锁，称为扩展阶段。<br>第二阶段释放封锁，称为收缩阶段。</li>
+<li>事务的四个特点：<br>事务：用户定义的一个数据库操作序列，这些操作要么不做要么全做。<br>一致性、原子性、隔离性、持续性。</li>
+<li>数据库故障的种类：<br>事务故障、系统故障、介质故障、计算机病毒。</li>
+<li>数据库恢复策略有哪几种：<br>转储：定期地将数据库中的内容复制到其它存储设备中去。<br>日志：数据库系统创建和维护的用于自动记载数据库中修改型操作的数据更新情况</li>
+<li>数据库的三级模式：<br>外模式、模式、内模式。<br>模式也称逻辑模式，是数据库中全体数据的逻辑结构和特征的描述，是所有用户的公共数据视图。<br>外模式也称子模式（Subschema）或用户模式，是数据库用户能够看见和使用的局部数据的逻辑结构和特征的描述，是与某一应用有关的数据的逻辑表示。<br>内模式也称存储模式，是数据物理结构和存储方式的描述，是数据在数据库内部的表示方式。  </li>
+<li>什么是表、什么是视图、两者的区别和联系是什么：<br>表是保存数据的实体，视图是一条语句，不保存数据也没有数据，从表中获取数据。<br>表可以建立各种触发器、索引、主键约束等，但视图无法建立这些对象。表和视图都可以更新，但视图的更新受到约束。</li>
+<li>1NF有哪些缺点：<br>数据冗余太大；更新、插入、删除异常。</li>
+<li>数据字典通常包含五个部分：<br>数据项、数据结构、数据流、数据存储、处理过程。</li>
+<li>数据库中视图的优点：<br>简化用户操作；<br>使用户以不同方式查询同一数据；<br>对数据库重构提供一定程度的逻辑独立性；<br>对机密数据提供安全保护。</li>
+<li>在做数据库开发中使用视图的优点：<br>可以访问表中列的子集，隐藏敏感数据；<br>可以访问表中行的子集，进行条件过滤；<br>可以重命名列名，增加代表意义；<br>可以快速访问多表连接所组成的数据；<br>可以快速读取聚合函数运算返回的数据集；</li>
+<li>数据库的三要素：<br>静态特征（数据结构）、动态特征（数据操作）、完整性约束条件。</li>
+<li>数据库索引：<br>目的：提供多种存储路径，加快查找速度<br>没有查询、统计的需求则不建；数据增删改频繁，系统会花费许多时间维护索引，从而降低查询效率。</li>
+<li>哪些视图可以更新，哪些不可以更新，举例说明：<br>基本表的行列子集视图一般是可更新的；<br>若视图的属性来自聚合函数，表达式，则该视图肯定不可以更新。</li>
+<li>日志文件的定义与作用：<br>定义：用来记录事务对数据库的更新操作的文件；<br>作用：用于数据库恢复，协助后备副本进行介质故障恢复。</li>
+<li>数据库完整性和安全性的区别：<br>前者防止数据库中存在不符合语义的数据，后者防止数据库被恶意破坏和非法存取。</li>
+<li>数据库有哪几种备份策略：<br>完全备份：每次对数据进行完整的备份；<br>增量备份(Incremental Backup)：只备份上次完全备份或增量备份后被修改的文件；<br>差异备份(Differential Backup)：只备份上次完全备份后被修改过的文件。</li>
+<li>什么是数据库控制语言，举例说明：<br>DCL用来设置或更改数据库用户角色权限的语句。<br>包括授权(grant)、拒绝(deny)、删除(remove)</li>
+<li>数据库采用什么机制保证数据库并发操作的正确性：<br>并发控制。相应技术：封锁、时间戳、乐观控制法等。</li>
+<li>数据库安全系统和计算机安全系统的关系：<br>安全性问题并非数据库系统独有，所有计算机系统都有这个问题。只是数据库系统中存放大量数据，并且为许多用户直接共享，从而使安全性问题更为突出。两者是紧密联系、相互支持的关系。</li>
+<li>函数模板和类模板的区别：<br>实例化不同。函数模板的实例化由编译程序在处理函数调用时自动完成，而类模板的实例化必须由程序员在程序中显式指定</li>
+<li>数据库管理系统的完整性要完成的功能：<br>防止不符合语义的数据进入数据库，造成无效操作和错误结果。</li>
+<li>DBMS控制管理功能：<br>数据定义；数据操纵；数据库运行管理；数据库组织和存储；数据库建立和维护。</li>
+<li>DBMS的控制操作有哪些：<br>数据的安全性保护、数据的完整性检查、并发控制、数据恢复。</li>
+<li>数据库两级映像的作用：<br>外模式/模式映像：保证数据库中的数据具有较高逻辑独立性；<br>模式/内模式映像：保证数据库中的数据具有较高物理独立性；</li>
+<li>笛卡尔积：<br>又称直积，X×Y，第一个对象是X的成员而第二个对象是Y的一个成员所构成的所有可能有序对。</li>
+<li>数据库中的primary key约束和unique约束有何区别：<br>主键约束：标识数据库记录唯一性，针对主键列，不允许记录重复，且键值不为空<br>UNIQUE KEY：防止数据插入时重复，只针对非主键列，允许有空值。</li>
+</ol>
+<p><strong>计算机网络：</strong></p>
+<ol>
+<li><p>比较TCP与UDP：</p>
+</li>
+<li><p>网络协议的三个核心要素及作用：</p>
+</li>
+<li><p>解释网络体系结构，其实现和理论有何区别：</p>
+</li>
+<li><p>波特和比特的区别：</p>
+</li>
+<li><p>什么是网络时延：</p>
+</li>
+<li><p>什么是码元、码元长度：</p>
+</li>
+<li><p>结合Internet，说说有连接服务和无连接服务：</p>
+</li>
+<li><p>点对点和端到端工作在哪层，及其工作机制：</p>
+</li>
+<li><p>网络时延由哪几部分组成，各产生于何处：</p>
+</li>
+<li><p>实体，协议：</p>
+</li>
+<li><p>TCP/IP网络协议的核心是什么，如何引出“over everything”和“everything over”：</p>
+</li>
+<li><p>用白军和蓝军解释下没有100%可靠的通信：</p>
+</li>
+<li><p>电路交换与分组交换的区别：</p>
+</li>
+<li><p>DNS：</p>
+</li>
+<li><p>NAT；</p>
+</li>
+<li><p>数据链路层协议分类：</p>
+</li>
+<li><p>路由器的组成：内部构件和外部构件；</p>
+</li>
+<li><p>IPV4和IPV6的区别：</p>
+</li>
+<li><p>TCP的拥塞控制与流量控制的功能与区别：<br>拥塞控制：防止过多的数据注入到网络中，可以使网络中的路由器或链路不致过载。拥塞控制是一个全局性的过程，涉及到所有主机、路由器，以及与降低网络传输性能有关的所有因素。<br>流量控制：指点对点通信量的控制，是端到端的问题。流量控制就是抑制发送端发送数据的速率，以便使接收端来得及接收。</p>
+</li>
+<li><p>PPP协议：<br>即点到点协议，运用在数据链路层，支持全双工的同、异步链路上进行点到点的传输，主要由链路控制协议族(LCP)和网络控制协议族(NCP)组成。</p>
+</li>
+<li><p>P2P网络编程的特点：<br>P2P对等网络，是一种有别于传统C/S架构的分布式网络，用户不必连接到服务器区浏览下载文件，而是寻找对等节点建立网络连接，直接进行数据传输。</p>
+</li>
+<li><p>DNS的递归查询和迭代查询（区别）：<br>递归查询：DNS 服务器接收到客户机请求，必须使用一个准确的查询结果回复客户机。如果DNS 服务器本地没有存储查询DNS 信息，那么该服务器会询问其他服务器，并将返回的查询结果提交给客户机。<br>迭代查询：DNS 服务器会向客户机提供其他能够解析查询请求的DNS 服务器地址，当客户机发送查询请求时，DNS 服务器并不直接回复查询结果，而是告诉客户机另一台DNS 服务器地址，客户机再向这台DNS 服务器提交请求，依次循环直到返回查询的结果为止。</p>
+</li>
+<li><p>ARP协议的过程：<br>即地址解析协议，是根据IP地址获取物理地址的一个TCP/IP协议。主机发送信息时将包含目标IP地址的ARP请求广播到网络上的所有主机，并接收返回消息，以此确定目标的物理地址；收到返回消息后将该IP地址和物理地址存入本机ARP缓存并保留一定时间，下次请求时直接查询ARP缓存以节约资源。</p>
+</li>
+<li><p>计算机网络的接入类型有哪些：<br>局域网、城域网、广域网、互联网</p>
+</li>
+<li><p>中继器、集线器、交换机、网桥、网关、路由器的功能作用，区别是什么：<br>(集线器、路由器和交换机有何区别)<br>(集线器、交换机、路由器各工作在哪层)<br>中继器：物理层，简单的信号放大器；<br>集线器：物理层，用于信号放大和连接多个终端；<br>交换机：数据链路层，有多个端口以连接各个主机，使用物理地址(MAC)，转发数据较快；<br>网桥：数据链路层，将两个局域网连起来，根据MAC地址来转发数据帧；<br>网关：网络层以上实现网络互连，是连接两个不同网络的接口；<br>路由器：网络层，阻止广播，安全性高，是用逻辑地址(IP)，转发数据较慢。</p>
+</li>
+<li><p>IP和MAC特点：<br>MAC地址存放在MAC帧首部，是数据链路层和物理层使用的地址；<br>IP地址存放在IP数据报的首部，IP数据报是MAC帧的数据，IP是网络层及以上各层使用的地址，是一种逻辑地址。</p>
+</li>
+<li><p>多路复用与多路分解：<br>多路复用：从源主机的不同套接字中收集数据块，并为每个数据块封装上首部信息从而生成报文段，然后将报文段传递到网络层；<br>多路分解：将运输层报文段中的数据交付到正确的套接字。</p>
+</li>
+<li><p>计算机网络接入方式？举例说明：<br>电话线(ADSL接入)；<br>有线电视网(光纤同轴混合接入(HFC))；<br>无线的WiFi接入；<br>光纤接入(FTTX)。</p>
+</li>
+<li><p>什么是虚电路网络，什么是数据报网络：<br>虚电路网络：两个通信主机在通信之前事先建立一条通道线路，所有分组都将沿这条线路有序传输。但这个线路上的某个路由器或者链路也可以为其他用户进行服务；<br>数据报网络：将要发送的数据分为许多分组进行独立发送，在发送过程中各个分组各自走自己的路线。</p>
+</li>
+<li><p>简述C/S和P2P混合结构的特点：<br>网络上每台主机既是服务器又是客户端。</p>
+</li>
+<li><p>公司配置域名服务器，该如何配置：<br>代理商注册域名，域名申请成功后做域名解析，绑定IP地址。</p>
+</li>
+<li><p>计算机网络有哪几种校验算法：<br>循环冗余校验CRC，奇偶校验，海明码校验。</p>
+</li>
+<li><p>子网掩码和默认网关是什么及作用：<br>子网掩码是一个32位地址，用于将某个IP地址划分为网络地址和主机地址两部分，可判断任意两台计算机的IP地址是否属于同一子网络；<br>默认网关是一个用于 TCP/IP 协议的配置项，是一个可直接到达的 IP 路由器的 IP 地址。一台主机若找不到可用网关，就把数据包发给指定的默认网关，由这个网关来处理数据包。</p>
+</li>
+<li><p>网络中数据的分片与重组发生在何时：<br>(IP协议在传输数据包时会将数据报文分成若干片进行传输，并在目标系统中进行重组。)<br>如果IP数据报加上数据帧头部后大于MTU，数据报文就会分成若干片进行传输。<br>在目标系统中具有同一个ID的IP分片将会从新组装，直到接收所有片段，形成正确的顺序。</p>
+</li>
+<li><p>如何实现IPV4和IPV6的互通：<br>双IP层技术：保持IPv6与IPv4互操作性的最直接方式。适用于Internet由IPv4向IPv6过渡的前期。具有双IP层的节点成为IPv4/IPv6节点。它具有两个IP协议的完整实现。<br>隧道技术：适用于Internet由IPv4向IPv6过渡的中期。其原理是两个IPv6的网络之间的中间网络的多协议路由器接收到源主机的IP包时，将其放入中间网络层数据包在和域中，当其到达中间网络另一端多协议路由器时再恢复源IP包并转发到目的主机。<br>报头翻译技术：当Internet中只有极少数IPv4节点时（过渡阶段后期），报头翻译技术可以保持IPv6与IPv4节点间的通讯。向IPv4节点发送消息时，路径上最后一个IPv6/IPv4路由器发现目的地址是IPv4映射地址则进行报头翻译，将IPv6报头替换成IPv4报头，并转发到目的IPv4节点。</p>
+</li>
+<li><p>UDP和TCP套接字编程的区别：<br>UDP程序结构更简单，对系统资源的要求更少；<br>TCP保证数据正确性，UDP可能丢包；<br>TCP保证数据顺序，UDP不保证。</p>
+</li>
+<li><p>发送序号和确认序号的作用：<br>发送方发送序号作为数据包的唯一标示，保证了传输数据包的顺序，同时接收方通过确认序号来保证所有传输的数据按照正常顺序重组，从而保障数据传输的完整。</p>
+</li>
+<li><p>TCP建立连接：即三次握手。<br>第一次握手：客户端发送同步包到服务器；</p>
+<p>第二次握手：服务器收到同步包，必须确认客户的同步请求，同时也发送一个同步确认包（ask=k）；</p>
+<p>第三次握手：客户端收到服务器的同步确认包，向服务器发送确认包。三次握手完成后，客户端和服务器就建立了tcp连接。</p>
+</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/think/" rel="tag"># think</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/20/Golden Age/" rel="next" title="Golden Age">
+                <i class="fa fa-chevron-left"></i> Golden Age
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/10/24/Algorithm/" rel="prev" title="Algorithm">
+                Algorithm <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="vcomments"></div>
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="feiyue" />
+            
+              <p class="site-author-name" itemprop="name">feiyue</p>
+              <p class="site-description motion-element" itemprop="description">然则独手击拍之音何若？</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/LiYiShen" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:1757921819@qq.com" target="_blank" title="E-Mail">
+                    
+                      <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://plus.google.com/yourname" target="_blank" title="Google">
+                    
+                      <i class="fa fa-fw fa-google"></i>Google</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          <!DOCTYPE html>
+<html>
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=26155346&auto=1&height=66"></iframe>
+
+<body> 
+</body>
+
+</html>
+
+
+
+
+
+        </div>
+      </section>
+
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">feiyue</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">9.2k</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine@1.1.6/dist/Valine.min.js"></script>
+  <script type="text/javascript">
+    new Valine({
+        av: AV,
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        app_id: 'X0IScu8yHGMMmNBpepVlEBBr-gzGzoHsz',
+        app_key: 'z2qfx6tgFTzJzVewTJqeDtLG',
+        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("X0IScu8yHGMMmNBpepVlEBBr-gzGzoHsz", "z2qfx6tgFTzJzVewTJqeDtLG");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>

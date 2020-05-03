@@ -1,20 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Golden Age]]></title>
-    <url>%2F2018%2F11%2F20%2FGolden%20Age%2F</url>
-    <content type="text"><![CDATA[已是去时独自语，欲语还休❤ 大学是一片梦中海，我们从不同的河游入其中，带着向往，带着好奇，也带着未知。 曾几何时，这玩意儿在耳边响起，便一刻也没消停，牛鬼蛇神皆如此言，说者意味深长，听者不以为意。因缘巧合，有的人来了，有的人没有。至者片刻欢喜，不至者片刻忧伤，但所思所想遂变。总的来说，人可以适应任何一种气氛，虽然需要一点时间。正如每个人都有自己的命运，你别无选择。 我们仅是海中鱼，所见所经历便印在心里。我也不知何因到了这里，茫茫大海，也遇见了形形色色的人，真真假假，不觉时间也在喧嚣声中走过。这是个人欲横流的社会，无奇不有，故无足为奇。在这样的大家庭里，大家抬头不见低头见，总会有许多共同的想法。我们总说人艰不拆，但每个人又总觉得自己亏，而别人都欠揍，于是我们怀着一个善良的愿望，就是盼天上掉下个大磨盘，把自己剩在磨眼里，把别人都砸死。虽然我们也常常感到累，有的人累的久了，便把它当做幸福，然后享受它并视为生活，但也并非所有人都能如此。我们都站在一个迷宫面前，前面有很多的线索，很多岔路，谁也看不清什么，偏又总以为无所不知。少一点恶意，多一点诗意，大学的存在，不过是等待故事的开始和讲故事的人而已。曲终人散。 四年时间里，零零碎碎学了一些东西，却好像丢下了更多，不知学为何。其实我觉得学习并非他人所授，也非社会所求，此乃本能，如同成长一般，我们都该做自己的老师。能力强弱，影响甚多，想或不想，无足轻重，毕竟我们都只是一条小小的鱼，离不开的是水，不是大海。君主想主宰众生，圣人想拯救百姓。有的话做得说不得。明心见性，我思故我在。我们的存在乃是不争事实，其本身便有极大魅力，无需任何证明。正如深山里花开，龙竹笋剥剥地爆去笋壳，直翘翘地向上。 我也时常害怕未知，但是每天清晨醒来不都是新的一天，新的未知吗？因为有的时候我感觉是梦，所以四年里给大家留下了什么印象，现在也不负责任，梦里梦外不知谁更怪！ 尘世嚣嚣，我们不管做什么，都困难重重。以后如何，无人知晓。这是一个梦，一个故事，要慢慢渗透。 最后摘一段话： 天色微微向晚，天上飘着懒洋洋的云彩。下半截沉在黑暗里，上半截仍浮在阳光中。那一天我二十一岁，在我一生的黄金时代。我有好多奢望。我想爱，想吃，还想在一瞬间变成天上半明半暗的云。后来我才知道，生活就是个缓慢受锤的过程，人一天天老下去，奢望也一天天消失，最后变得像挨了锤的牛一样。生活，不该如此；生活，正是如此.]]></content>
-      <categories>
-        <category>life</category>
-      </categories>
-      <tags>
-        <tag>think</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Git]]></title>
-    <url>%2F2017%2F11%2F20%2FGit%2F</url>
-    <content type="text"><![CDATA[Git简述 Git 只关心文件数据的整体是否发生变化，而大多数其他系统则只关心文件内容的具体差异。 保存到 Git 之前，所有数据都要进行内容的校验和（checksum）计算，并将此结果作为数据的唯一标识和索引。 Git 使用 SHA-1 算法计算数据的校验和，通过对文件的内容或目录的结构计算出一个 SHA-1 哈希值，作为指纹字符串。该字串由 40 个十六进制字符(0-9 及 a-f)组成。所有保存在 Git 数据库中的内容都用此哈希值作索引，而不是靠文件名。 任何一个文件，在 Git 内都只有三种状态：已提交（committed），已修改（modified）和已暂存（staged）。已提交表示该文件已经被安全地保存在本地数据库；已修改表示修改了某个文件，但还没有提交保存；已暂存表示把已修改的文件放在下次提交时要保存的清单中。 Git 基本流程： 在工作目录中修改某些文件。 对修改后的文件进行快照，然后保存到暂存区域。 提交更新，将保存在暂存区域的文件快照永久转储到 Git 目录。 配置个人用户名和电子邮件地址(表明谁提交了更新) $ git config --global user.name &quot;John Doe&quot; $ git config --global user.email johndoe@example.com 查看配置信息 $ git config --list 获取帮助 $ git help &lt;verb&gt; $ git &lt;verb&gt; --help $ man git-&lt;verb&gt; 对现有的某个项目开始用 Git 管理，只需到此项目所在的目录初始化： $ git init 如果当前目录下有几个文件想要纳入版本控制，先用 git add 命令告诉 Git 开始对这些文件进行跟踪，然后提交： $ git add *.c # 加文件名表示跟踪 $ git add README $ git commit -m &apos;initial project version&apos; 克隆仓库： git clone [url] $ git clone git://github.com/schacon/grit.git 检查当前文件状态：(工作目录的所有文件都不外乎两种状态：已跟踪或未跟踪。) $ git status On branch master nothing to commit, working directory clean git add ：根据目标文件的状态不同，此命令的效果也不同。可以用它开始跟踪新文件，或者把已跟踪的文件放到暂存区，还能用于合并时把有冲突的文件标记为已解决状态等。 忽略某些文件 有些文件无需纳入 Git 管理，也不希望它们总出现在未跟踪文件列表。通常都是些自动生成的文件，比如日志文件，或者编译过程中创建的临时文件等。可以创建一个名为 .gitignore 的文件，列出要忽略的文件模式。 $ cat .gitignore *.[oa] *~ 文件 .gitignore 的格式规范如下： 所有空行或者以注释符号 ＃ 开头的行都会被 Git 忽略。 可以使用标准的 glob 模式匹配。 匹配模式最后跟反斜杠（/）说明要忽略的是目录。 要忽略指定模式以外的文件或目录，可以在模式前加上惊叹号（!）取反。 例子： #### 此为注释 – 将被 Git 忽略 # 忽略所有 .a 结尾的文件 *.a # 但 lib.a 除外 !lib.a # 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO /TODO # 忽略 build/ 目录下的所有文件 build/ # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt doc/*.txt # ignore all .txt files in the doc/ directory doc/**/*.txt 查看尚未暂存的文件更新了哪些部分，不加参数直接输入 $ git diff 查看已经暂存起来的文件和上次提交时的快照之间的差异 $ git diff --cached 提交更新(先git status看是否都暂存了)： $ git commit -m &quot;Story 182: Fix benchmarks for speed&quot; #说明 在提交的时候，给 git commit 加上 -a 选项，Git 就会自动把所有已经跟踪过的文件暂存起来一并提交，从而跳过 git add 步骤. 移除文件： 要从 Git 中移除某个文件，就必须要从已跟踪文件清单中移除（确切地说，是从暂存区域移除），然后提交。可以用 git rm 命令完成此项工作，并连带从工作目录中删除指定的文件，这样以后就不会出现在未跟踪文件清单中了。最后提交的时候，该文件就不再纳入版本管理了。如果删除之前修改过并且已经放到暂存区域的话，则必须要用强制删除选项 -f 另外一种情况是，我们想把文件从 Git 仓库中删除（亦即从暂存区域移除），但仍然希望保留在当前工作目录中。换句话说，仅是从跟踪清单中删除。比如一些大型日志文件或者一堆 .a 编译文件，不小心纳入仓库后，要移除跟踪但不删除文件，以便稍后在 .gitignore 文件中补上，用 --cached 选项即可： $ git rm --cached readme.txt 后面可以列出文件或者目录的名字，也可以使用 glob 模式。比方说： $ git rm log/\*.log 注意到星号 * 之前的反斜杠 \，因为 Git 有它自己的文件模式扩展匹配方式，所以我们不用 shell 来帮忙展开（译注：实际上不加反斜杠也可以运行，只不过按照 shell 扩展的话，仅仅删除指定目录下的文件而不会递归匹配。上面的例子本来就指定了目录，所以效果等同，但下面的例子就会用递归方式匹配，所以必须加反斜杠。）。此命令删除所有 log/ 目录下扩展名为 .log 的文件。类似的比如： $ git rm \*~ 会递归删除当前目录及其子目录中所有 ~ 结尾的文件。 移动文件$ git mv file_from file_to 其实，运行 git mv 就相当于运行了下面三条命令： $ mv README.txt README $ git rm README.txt $ git add README 常用： git init git remote add origin git status git add git commit -m git push git pull origin master:master git push -u origin master]]></content>
+    <title>Git</title>
+    <url>/2017/11/20/Git/</url>
+    <content><![CDATA[<h3 id="Git简述"><a href="#Git简述" class="headerlink" title="Git简述"></a>Git简述</h3><ul>
+<li>Git 只关心文件数据的整体是否发生<strong>变化</strong>，而大多数其他系统则只关心文件内容的具体差异。</li>
+<li>保存到 Git 之前，所有数据都要进行内容的校验和（checksum）计算，并将此结果作为数据的<strong>唯一标识和索引</strong>。</li>
+<li>Git 使用 SHA-1 算法计算数据的校验和，通过对文件的内容或目录的结构计算出一个 SHA-1 哈希值，作为指纹字符串。该字串由 40 个十六进制字符(0-9 及 a-f)组成。所有保存在 Git 数据库中的内容都用此<strong>哈希值作索引</strong>，而不是靠文件名。</li>
+<li>任何一个文件，在 Git 内都只有三种状态：已提交（committed），已修改（modified）和已暂存（staged）。已提交表示该文件已经被安全地保存在本地数据库；已修改表示修改了某个文件，但还没有提交保存；已暂存表示把已修改的文件放在下次提交时要保存的清单中。</li>
+<li>Git 基本流程：<ul>
+<li>在工作目录中修改某些文件。</li>
+<li>对修改后的文件进行快照，然后保存到暂存区域。</li>
+<li>提交更新，将保存在暂存区域的文件快照永久转储到 Git 目录。</li>
+</ul>
+</li>
+</ul>
+<p>配置个人用户名和电子邮件地址(表明谁提交了更新)</p>
+<pre><code>$ git config --global user.name &quot;John Doe&quot;
+$ git config --global user.email johndoe@example.com
+</code></pre><p>查看配置信息</p>
+<pre><code>$ git config --list
+</code></pre><p>获取帮助</p>
+<pre><code>$ git help &lt;verb&gt;
+$ git &lt;verb&gt; --help
+$ man git-&lt;verb&gt;
+</code></pre><p>对现有的某个项目开始用 Git 管理，只需到此项目所在的目录初始化：</p>
+<pre><code>$ git init
+</code></pre><p>如果当前目录下有几个文件想要纳入版本控制，先用 git add 命令告诉 Git 开始对这些文件进行跟踪，然后提交：</p>
+<pre><code>$ git add *.c     # 加文件名表示跟踪
+$ git add README
+$ git commit -m &apos;initial project version&apos;
+</code></pre><p>克隆仓库：</p>
+<pre><code>git clone [url]
+$ git clone git://github.com/schacon/grit.git
+</code></pre><p>检查当前文件状态：(工作目录的所有文件都不外乎两种状态：已跟踪或未跟踪。)</p>
+<pre><code>$ git status
+On branch master
+nothing to commit, working directory clean
+</code></pre><ul>
+<li><code>git add</code> ：根据目标文件的状态不同，此命令的效果也不同。可以用它开始跟踪新文件，或者把已跟踪的文件放到暂存区，还能用于合并时把有冲突的文件标记为已解决状态等。</li>
+</ul>
+<h3 id="忽略某些文件"><a href="#忽略某些文件" class="headerlink" title="忽略某些文件"></a>忽略某些文件</h3><ul>
+<li><p>有些文件无需纳入 Git 管理，也不希望它们总出现在未跟踪文件列表。通常都是些自动生成的文件，比如日志文件，或者编译过程中创建的临时文件等。可以创建一个名为 .gitignore 的文件，列出要忽略的文件模式。</p>
+<pre><code>$ cat .gitignore
+*.[oa]
+*~
+</code></pre></li>
+<li><p>文件 .gitignore 的格式规范如下：</p>
+<ul>
+<li>所有空行或者以注释符号 ＃ 开头的行都会被 Git 忽略。</li>
+<li>可以使用标准的 glob 模式匹配。</li>
+<li>匹配模式最后跟反斜杠（/）说明要忽略的是目录。</li>
+<li>要忽略指定模式以外的文件或目录，可以在模式前加上惊叹号（!）取反。</li>
+</ul>
+</li>
+<li><p>例子：</p>
+<pre><code>#### 此为注释 – 将被 Git 忽略
+# 忽略所有 .a 结尾的文件
+*.a
+# 但 lib.a 除外
+!lib.a
+# 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO
+/TODO
+# 忽略 build/ 目录下的所有文件
+build/
+# 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
+doc/*.txt
+# ignore all .txt files in the doc/ directory
+doc/**/*.txt
+</code></pre></li>
+<li><p>查看尚未暂存的文件更新了哪些部分，不加参数直接输入 </p>
+<pre><code>$ git diff
+</code></pre></li>
+<li><p>查看已经暂存起来的文件和上次提交时的快照之间的差异</p>
+<pre><code>$ git diff --cached
+</code></pre></li>
+<li><p>提交更新(先<code>git status</code>看是否都暂存了)：</p>
+<pre><code>$ git commit -m &quot;Story 182: Fix benchmarks for speed&quot; #说明
+</code></pre></li>
+<li><p>在提交的时候，给 <code>git commit</code> 加上 <code>-a</code> 选项，<code>Git</code> 就会自动把所有已经跟踪过的文件暂存起来一并提交，从而跳过 <code>git add</code> 步骤.</p>
+</li>
+</ul>
+<h3 id="移除文件："><a href="#移除文件：" class="headerlink" title="移除文件："></a>移除文件：</h3><ul>
+<li>要从 Git 中移除某个文件，就必须要从已跟踪文件清单中移除（确切地说，是从暂存区域移除），然后提交。可以用 <code>git rm</code> 命令完成此项工作，并连带从工作目录中删除指定的文件，这样以后就不会出现在未跟踪文件清单中了。最后提交的时候，该文件就不再纳入版本管理了。如果删除之前修改过并且已经放到暂存区域的话，则必须要用强制删除选项 <code>-f</code></li>
+<li><p>另外一种情况是，我们想把文件从 Git 仓库中删除（亦即从暂存区域移除），但仍然希望保留在当前工作目录中。换句话说，仅是从跟踪清单中删除。比如一些大型日志文件或者一堆 .a 编译文件，不小心纳入仓库后，要移除跟踪但不删除文件，以便稍后在 <code>.gitignore</code> 文件中补上，用 <code>--cached</code> 选项即可：</p>
+<pre><code>$ git rm --cached readme.txt
+</code></pre></li>
+<li><p>后面可以列出文件或者目录的名字，也可以使用 glob 模式。比方说：</p>
+<pre><code>$ git rm log/\*.log
+</code></pre></li>
+<li><p>注意到星号 * 之前的反斜杠 \，因为 Git 有它自己的文件模式扩展匹配方式，所以我们不用 shell 来帮忙展开（译注：实际上不加反斜杠也可以运行，只不过按照 shell 扩展的话，仅仅删除指定目录下的文件而不会递归匹配。上面的例子本来就指定了目录，所以效果等同，但下面的例子就会用递归方式匹配，所以必须加反斜杠。）。此命令删除所有 log/ 目录下扩展名为 .log 的文件。类似的比如：</p>
+<pre><code>$ git rm \*~
+</code></pre></li>
+<li><p>会递归删除当前目录及其子目录中所有 ~ 结尾的文件。</p>
+</li>
+</ul>
+<h3 id="移动文件"><a href="#移动文件" class="headerlink" title="移动文件"></a>移动文件</h3><pre><code>$ git mv file_from file_to
+</code></pre><ul>
+<li><p>其实，运行 git mv 就相当于运行了下面三条命令：</p>
+<pre><code>$ mv README.txt README
+$ git rm README.txt
+$ git add README
+</code></pre></li>
+</ul>
+<h3 id="常用："><a href="#常用：" class="headerlink" title="常用："></a>常用：</h3><ul>
+<li>git init</li>
+<li>git remote add origin <git path=""></git></li>
+<li>git status</li>
+<li>git add</li>
+<li>git commit -m</li>
+<li>git push</li>
+<li>git pull origin master:master</li>
+<li>git push -u origin master</li>
+</ul>
+]]></content>
       <categories>
         <category>record</category>
       </categories>
@@ -23,9 +122,30 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[test]]></title>
-    <url>%2F2017%2F10%2F12%2FTest%2F</url>
-    <content type="text"><![CDATA[这是一篇测试文章，欢迎关注作者博客[1]: https://liyishen.github.io/ 我们好像在池塘的水底，从一个月亮走向另一个月亮。]]></content>
+    <title>Golden Age</title>
+    <url>/2018/11/20/Golden%20Age/</url>
+    <content><![CDATA[<h2 id="已是去时独自语，欲语还休❤"><a href="#已是去时独自语，欲语还休❤" class="headerlink" title="已是去时独自语，欲语还休❤"></a>已是去时独自语，欲语还休❤</h2><blockquote>
+<p>　　大学是一片梦中海，我们从不同的河游入其中，带着向往，带着好奇，也带着未知。 </p>
+<p>　　曾几何时，这玩意儿在耳边响起，便一刻也没消停，牛鬼蛇神皆如此言，说者意味深长，听者不以为意。因缘巧合，有的人来了，有的人没有。至者片刻欢喜，不至者片刻忧伤，但所思所想遂变。总的来说，人可以适应任何一种气氛，虽然需要一点时间。正如每个人都有自己的命运，你别无选择。 我们仅是海中鱼，所见所经历便印在心里。我也不知何因到了这里，茫茫大海，也遇见了形形色色的人，真真假假，不觉时间也在喧嚣声中走过。<br>这是个人欲横流的社会，无奇不有，故无足为奇。在这样的大家庭里，大家抬头不见低头见，总会有许多共同的想法。我们总说人艰不拆，但每个人又总觉得自己亏，而别人都欠揍，于是我们怀着一个善良的愿望，就是盼天上掉下个大磨盘，把自己剩在磨眼里，把别人都砸死。虽然我们也常常感到累，有的人累的久了，便把它当做幸福，然后享受它并视为生活，但也并非所有人都能如此。我们都站在一个迷宫面前，前面有很多的线索，很多岔路，谁也看不清什么，偏又总以为无所不知。少一点恶意，多一点诗意，大学的存在，不过是等待故事的开始和讲故事的人而已。曲终人散。 </p>
+<p>　　四年时间里，零零碎碎学了一些东西，却好像丢下了更多，不知学为何。其实我觉得学习并非他人所授，也非社会所求，此乃本能，如同成长一般，我们都该做自己的老师。能力强弱，影响甚多，想或不想，无足轻重，毕竟我们都只是一条小小的鱼，离不开的是水，不是大海。君主想主宰众生，圣人想拯救百姓。有的话做得说不得。明心见性，我思故我在。我们的存在乃是不争事实，其本身便有极大魅力，无需任何证明。正如深山里花开，龙竹笋剥剥地爆去笋壳，直翘翘地向上。 我也时常害怕未知，但是每天清晨醒来不都是新的一天，新的未知吗？因为有的时候我感觉是梦，所以四年里给大家留下了什么印象，现在也不负责任，梦里梦外不知谁更怪！ 尘世嚣嚣，我们不管做什么，都困难重重。以后如何，无人知晓。这是一个梦，一个故事，要慢慢渗透。</p>
+<p>最后摘一段话：</p>
+<blockquote>
+<p>天色微微向晚，天上飘着懒洋洋的云彩。下半截沉在黑暗里，上半截仍浮在阳光中。那一天我二十一岁，在我一生的黄金时代。我有好多奢望。我想爱，想吃，还想在一瞬间变成天上半明半暗的云。后来我才知道，生活就是个缓慢受锤的过程，人一天天老下去，奢望也一天天消失，最后变得像挨了锤的牛一样。<br>生活，不该如此；生活，正是如此.</p>
+</blockquote>
+</blockquote>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>think</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/2017/10/12/Test/</url>
+    <content><![CDATA[<p>这是一篇测试文章，欢迎关注作者博客[1]: <a href="https://liyishen.github.io/">https://liyishen.github.io/</a></p>
+<h2 id="我们好像在池塘的水底，从一个月亮走向另一个月亮。"><a href="#我们好像在池塘的水底，从一个月亮走向另一个月亮。" class="headerlink" title="我们好像在池塘的水底，从一个月亮走向另一个月亮。"></a>我们好像在池塘的水底，从一个月亮走向另一个月亮。</h2>]]></content>
       <categories>
         <category>搭建博客</category>
       </categories>
@@ -36,8 +156,242 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[The use of Hexo]]></title>
-    <url>%2F2017%2F10%2F11%2FThe%20use%20of%20Hexo%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartInitialize1$ hexo init Create a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment Clean cache1$ hexo clean]]></content>
+    <title>The use of Hexo</title>
+    <url>/2017/10/11/The%20use%20of%20Hexo/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Initialize"><a href="#Initialize" class="headerlink" title="Initialize"></a>Initialize</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo init</div></pre></td></tr></table></figure>
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<h3 id="Clean-cache"><a href="#Clean-cache" class="headerlink" title="Clean cache"></a>Clean cache</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo clean</div></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>Algorithm</title>
+    <url>/2019/10/24/Algorithm/</url>
+    <content><![CDATA[<p><strong>P问题</strong>：能够在多项式时间内解决的决策问题。<br><strong>NP问题</strong>：多项式时间内能够验证的问题称为NP问题。<br><strong>NPC问题</strong>：可以在多项式时间内对问题所有可能的解进行验证,并给出其正确性的问题。目前不能用多项式时间解决，但还不能证明这个问题不能用多项式解决。<br>规约（Reduction）：如果要证明一个问题是NPC问题，则只需要证明他是NP问题，然后找一个你所知道的NPC问题规约到A即可。<br><strong>NP-hard问题</strong>：是指从算法角度比NP还难的问题，指的是所有的NP问题可以通过某个多项式时间的函数规约到这类问题。NP-hard问题不一定是NP问题，因为总有一些NP-hard问题无法在多项式时间判断一个解是否可行。 </p>
+<p>如果<strong>A到B规约</strong>成功，则说明：B至少比A要难，即只要有一个解决B的黑盒子算法，就能解决A问题。<br>故在证明一个问题是NPC问题时，如果掌握的已知NPC问题越多，对于规约越有利。</p>
+<p>一般来说<strong>证明B是NPC</strong>的过程如下：<br>1.证明B是NP问题。<br>2.知道一个已知的NPC问题A。<br>3.给出一个规约过程A规约到B，并证明此规约过程是多项式时间的。<br><img src="/2019/10/24/Algorithm/1.jpg" alt="示例"><br><img src="/2019/10/24/Algorithm/2.jpg" alt="示例"><br><strong>独立集</strong>：一个点集，点集中各点没有关系。（点独立）<br><strong>最大独立集</strong>：点的个数最多的独立集。<br>最大独立集 == 点的总数 - 最小点覆盖。<br><strong>最小点覆盖</strong>：图中每个边至少一个端点在该点集中的最小点集。（点覆盖所有边）</p>
+<p><img src="/2019/10/24/Algorithm/3.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/4.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/5.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/6.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/7.jpg" alt="示例"></p>
+<p>点覆盖规约到集合覆盖：</p>
+<p><img src="/2019/10/24/Algorithm/8.jpg" alt="示例"></p>
+<p>Boolean satisfiability problem 简称SAT，简单说就是用来判断一组给定的布林函数，是否可以找到一组变数赋值能使其为真。SAT是第一个NP-Complete problem </p>
+<p><img src="/2019/10/24/Algorithm/9.jpg" alt="示例"></p>
+<p>SAT规约到3-SAT：</p>
+<p><img src="/2019/10/24/Algorithm/10.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/11.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/12.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/13.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/14.jpg" alt="示例"></p>
+<p>3-SAT规约到独立集：</p>
+<p><img src="/2019/10/24/Algorithm/15.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/16.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/17.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/18.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/19.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/20.jpg" alt="示例"></p>
+<p>3-SAT规约到点覆盖：</p>
+<p><img src="/2019/10/24/Algorithm/21.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/22.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/23.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/24.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/25.jpg" alt="示例"></p>
+<p>哥尼斯堡七桥问题是在寻找一条遍历图中所有边的简单路径，而哈密尔顿的周游世界问题则是在寻找一条遍历图中所有点的基本路径。</p>
+<p>CIRCUIT-SAT规约到SAT</p>
+<p><img src="/2019/10/24/Algorithm/26.jpg" alt="示例"></p>
+<p>3-SAT规约到有向哈密尔顿回路：</p>
+<p><img src="/2019/10/24/Algorithm/27.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/28.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/29.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/30.jpg" alt="示例"></p>
+<p>汉密尔顿路径规约到汉密尔顿回路：</p>
+<p><img src="/2019/10/24/Algorithm/31.jpg" alt="示例"></p>
+<p>汉密尔顿回路规约到汉密尔顿路径：</p>
+<p><img src="/2019/10/24/Algorithm/32.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/33.jpg" alt="示例"></p>
+<p>有向汉密尔顿回路规约到无向汉密尔顿回路：</p>
+<p><img src="/2019/10/24/Algorithm/34.jpg" alt="示例"></p>
+<p><img src="/2019/10/24/Algorithm/35.jpg" alt="示例"></p>
+<p>无向汉密尔顿回路规约到有向汉密尔顿回路：</p>
+<p><img src="/2019/10/24/Algorithm/36.jpg" alt="示例"></p>
+<p>图片来自网络。</p>
+]]></content>
+      <categories>
+        <category>record</category>
+      </categories>
+      <tags>
+        <tag>algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Machine Learning</title>
+    <url>/2019/10/28/Machine%20Learning/</url>
+    <content><![CDATA[<p><strong>李航统计学习方法</strong>:</p>
+<ul>
+<li>NFL定律指明，如果我们对要解决的问题一无所知并假设其分布完全随机且平等，那任何算法的预期性能都是相似的。脱离具体问题，空谈‘什么学习算法更好’毫无意义。</li>
+<li>集成学习的精髓在于假设“子分类器”的错误相互独立，随着集成中子分类器的数目上升，集成学习后的”母分类器”的误差将会以指数级别下降，直至为0。假设过于乐观。</li>
+<li>个体学习的准确性和多样性本身就存在冲突，一般的，准确性很高后，要增加多样性就需牺牲准确性。事实上，如何产生并结合好而不同个体学习器，恰是集合学习的研究核心。</li>
+<li>细分集成学习的话，也有两种截然相反的设计思路：<ul>
+<li>思路1：每个子学习器都是弱分类器，在融合后成为一个强力的主体。<br>代表算法：随机森林<br>每个子学习器都是强分类器，融合过程中可能：<ul>
+<li>思路2（强中取强）：选择最强的那一个。<br>代表算法：dynamic classifier selection</li>
+<li>思路3 （公平选择）：一视同仁的对待每个子学习器，融合出一个更强的主体。<br>代表算法：stacking</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>让一堆子学习器集体做决定的缺陷在于低效，容易被平庸的子学习器拖了后腿。而信赖最强者的缺点在于缺乏稳定性，上限可以很高，下限也可以很低。</li>
+<li>频率学派 - Frequentist - Maximum Likelihood Estimation (MLE，最大似然估计)<br>贝叶斯学派 - Bayesian - Maximum A Posteriori (MAP，最大后验估计)</li>
+<li>频率学派相信参数是客观存在的，虽然未知，但不会改变。因此频率学派的方法一直都是试图估计“哪个值最接近真实值”，相对应的我们使用最大似然估计(Maximum Likelihood Estimation)，置信区间(Confidence Level), 和p-value。因此这一切都是体现我们对于真实值估算的自信和可靠度。</li>
+<li>而贝叶斯学派相信参数不是固定的，我们需要发生过的事情来推测参数，这也是为什么总和先验(Prior)及后验(Posterior)过不去，才有了最大后验(Maximum a Posteriori)即MAP。贝叶斯学派最大的优势在于承认未知(Uncertainty)的存在，因此感觉更符合我们的常识“不可知论”。</li>
+<li>偏置的大小度量了神经元产生正(负)激励的难易程度，偏置是不需要正则化的，并且正则化偏置的话会导致欠拟合。</li>
+<li>有隐层时，学习得到的模型中, 所有的隐单元都是相同的<br>没有隐层时, 可以将所有的参数初始化为0</li>
+<li>one-hot编码：<br>稀疏矩阵做矩阵计算，计算方便快捷、表达能力强。过于稀疏时，过度占用资源。</li>
+<li>embedding嵌入层：类似于虚拟出一个关系对当前数据进行映射。<br>在某种程度上，就是用来降维，降维的原理就是矩阵乘法。在卷积网络中，可以理解为特殊全连接层操作，跟1x1卷积核异曲同工。</li>
+<li>embedding的又一个作用：<br>对低维数据进行升维时，可能把一些其他特征放大了，或者把笼统的特征给分开了。同时，这个embedding是一直在学习优化的，使得整个拉近拉远的过程慢慢形成一个良好的观察点。（距离的远近会影响我们的观察效果。同理，低维数据可能包含的特征是非常笼统的，需要不停地拉近拉远来改变我们的感受野，让我们对这幅图有不同的观察点，找出我们要的茬。）</li>
+<li>回想一下为什么CNN层数越深准确率越高，卷积层卷了又卷，池化层升了又升，升了又降，全连接层连了又连。因为我们也不知道它什么时候突然就学到某个有用特征。但是不管怎样，学习都是好事，所以让机器多卷一卷，多连一连，反正错了多少我会用交叉熵告诉你，怎么做才是对的我会用梯度下降算法告诉你，只要给你时间，你迟早会学懂。因此，理论上，只要层数深，只要参数足够，NN能拟合任何特征。</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>考研复试</title>
+    <url>/2019/03/09/%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95/</url>
+    <content><![CDATA[<p><strong>数据库：</strong></p>
+<ol>
+<li>数据库保护、访问的内容有哪些：<br>利用权限机制和完整性约束防止非法数据进入数据库；<br>提供故障恢复能力和并发访问控制。</li>
+<li>DBA的职责：<br>管理和控制数据库系统。<br>决定数据库中存放信息的内容和结构；<br>决定数据库的存储结构和存取策略；<br>定义数据的安全性要求和完整性约束条件；<br>监控数据库的使用和运行；<br>改进和重构数据库。</li>
+<li>数据库系统和文件系统相比有何特点：<br>共享性高、冗余度小；<br>采用数据模型描述，整体结构化；<br>由数据库管理系统提供数据安全性、完整性，并发访问控制和故障恢复；<br>具有高度的物理独立性和逻辑独立性；</li>
+<li>什么是完整性约束：<br>完整性约束包含实体完整性、参照完整性、用户自定义完整性；用于确保数据库中数据的正确相容。</li>
+<li>DBMS支持哪几种数据模型：</li>
+<li>SQL(Structured query language)的四个组成部分：<br>数据定义语言、查询语言、数据操纵语言、数据控制语言。</li>
+<li>数据库操纵语言举例：<br>即DML，用户可通过它实现对数据库的基本操作。包含增删改查。</li>
+<li>介绍下有哪些应用数据库：<br>桌面型：Access<br>企业型：SQL Server、MYSQL、Oracle</li>
+<li>什么是数据独立性（数据库的两种独立性）：<br>数据独立性包括数据的物理独立性和逻辑独立性。<br>物理独立性指用户的应用程序与存储在磁盘上的数据库中的数据是相互独立的。即数据在磁盘上怎样存储由DBMS(数据库管理系统)管理，应用程序只处理数据的逻辑结构。当数据的物理存储改变，应用程序不用修改。<br>逻辑独立性指用户的应用程序与数据库的逻辑结构是相互独立的，即当数据库的逻辑结构改变时，用户程序可以不变。</li>
+<li>数据模式：数据库存放数据的模式。以此才能构造复杂的数据结构来建立数据间的联系。<br>1NF：数据库表中字段都是单一属性，不可再分；<br>2NF：不存在非主属性对任一主属性的部分函数依赖；<br>3NF：不存在非主属性对任一主属性的传递函数依赖。<br>BNCF范式：在第三范式的基础上，消除主属性之间的部分函数依赖。</li>
+<li>数据库的关系操作有哪些？各有什么作用？<br>包括查询(query)和插入(insert)、删除(delete)、修改(update)两大部分。<br>查询操作又可以分为选择(select)、投影(project)、连接(join)、除(divide)、并(union)、差(except)、交(intersection)、笛卡儿积等。</li>
+<li>DB并发操作通常带来哪三类问题：<br>丢失修改：当一个事务修改了数据，并且还未提交到数据库时，另一个事务又对同样的数据进行了修改，并且提交到了数据库中。这样，数据库中没有出现第一个事务修改数据的结果，好像这种数据修改丢失了一样。<br>脏读：当一个事务正在访问数据，并对数据进行了修改，且还未提交到数据库时，另一个事务也访问这个数据，且使用了这个数据。因为这个数据是还没有提交的数据，那么另一个事务读到的这个数据是脏数据，依据脏数据所做的操作可能是不正确的。<br>不可重复读：在一个事务内，多次读同一数据。在这个事务还没有结束时，另一个事务也访问同一数据，在第一个事务中的两次读数据之间，由于第二个事务的修改，所读到的数据可能是不一样的。</li>
+<li>两段锁协议：<br>规定所有事务应遵守的规则：<br>在对任何数据进行读、写操作之前，首先要申请并获得对该数据的封锁。<br>在释放一个封锁之后，事务不再申请和获得其它任何封锁。<br>即事务的执行分为两个阶段：<br>第一阶段获得封锁，称为扩展阶段。<br>第二阶段释放封锁，称为收缩阶段。</li>
+<li>事务的四个特点：<br>事务：用户定义的一个数据库操作序列，这些操作要么不做要么全做。<br>一致性、原子性、隔离性、持续性。</li>
+<li>数据库故障的种类：<br>事务故障、系统故障、介质故障、计算机病毒。</li>
+<li>数据库恢复策略有哪几种：<br>转储：定期地将数据库中的内容复制到其它存储设备中去。<br>日志：数据库系统创建和维护的用于自动记载数据库中修改型操作的数据更新情况</li>
+<li>数据库的三级模式：<br>外模式、模式、内模式。<br>模式也称逻辑模式，是数据库中全体数据的逻辑结构和特征的描述，是所有用户的公共数据视图。<br>外模式也称子模式（Subschema）或用户模式，是数据库用户能够看见和使用的局部数据的逻辑结构和特征的描述，是与某一应用有关的数据的逻辑表示。<br>内模式也称存储模式，是数据物理结构和存储方式的描述，是数据在数据库内部的表示方式。  </li>
+<li>什么是表、什么是视图、两者的区别和联系是什么：<br>表是保存数据的实体，视图是一条语句，不保存数据也没有数据，从表中获取数据。<br>表可以建立各种触发器、索引、主键约束等，但视图无法建立这些对象。表和视图都可以更新，但视图的更新受到约束。</li>
+<li>1NF有哪些缺点：<br>数据冗余太大；更新、插入、删除异常。</li>
+<li>数据字典通常包含五个部分：<br>数据项、数据结构、数据流、数据存储、处理过程。</li>
+<li>数据库中视图的优点：<br>简化用户操作；<br>使用户以不同方式查询同一数据；<br>对数据库重构提供一定程度的逻辑独立性；<br>对机密数据提供安全保护。</li>
+<li>在做数据库开发中使用视图的优点：<br>可以访问表中列的子集，隐藏敏感数据；<br>可以访问表中行的子集，进行条件过滤；<br>可以重命名列名，增加代表意义；<br>可以快速访问多表连接所组成的数据；<br>可以快速读取聚合函数运算返回的数据集；</li>
+<li>数据库的三要素：<br>静态特征（数据结构）、动态特征（数据操作）、完整性约束条件。</li>
+<li>数据库索引：<br>目的：提供多种存储路径，加快查找速度<br>没有查询、统计的需求则不建；数据增删改频繁，系统会花费许多时间维护索引，从而降低查询效率。</li>
+<li>哪些视图可以更新，哪些不可以更新，举例说明：<br>基本表的行列子集视图一般是可更新的；<br>若视图的属性来自聚合函数，表达式，则该视图肯定不可以更新。</li>
+<li>日志文件的定义与作用：<br>定义：用来记录事务对数据库的更新操作的文件；<br>作用：用于数据库恢复，协助后备副本进行介质故障恢复。</li>
+<li>数据库完整性和安全性的区别：<br>前者防止数据库中存在不符合语义的数据，后者防止数据库被恶意破坏和非法存取。</li>
+<li>数据库有哪几种备份策略：<br>完全备份：每次对数据进行完整的备份；<br>增量备份(Incremental Backup)：只备份上次完全备份或增量备份后被修改的文件；<br>差异备份(Differential Backup)：只备份上次完全备份后被修改过的文件。</li>
+<li>什么是数据库控制语言，举例说明：<br>DCL用来设置或更改数据库用户角色权限的语句。<br>包括授权(grant)、拒绝(deny)、删除(remove)</li>
+<li>数据库采用什么机制保证数据库并发操作的正确性：<br>并发控制。相应技术：封锁、时间戳、乐观控制法等。</li>
+<li>数据库安全系统和计算机安全系统的关系：<br>安全性问题并非数据库系统独有，所有计算机系统都有这个问题。只是数据库系统中存放大量数据，并且为许多用户直接共享，从而使安全性问题更为突出。两者是紧密联系、相互支持的关系。</li>
+<li>函数模板和类模板的区别：<br>实例化不同。函数模板的实例化由编译程序在处理函数调用时自动完成，而类模板的实例化必须由程序员在程序中显式指定</li>
+<li>数据库管理系统的完整性要完成的功能：<br>防止不符合语义的数据进入数据库，造成无效操作和错误结果。</li>
+<li>DBMS控制管理功能：<br>数据定义；数据操纵；数据库运行管理；数据库组织和存储；数据库建立和维护。</li>
+<li>DBMS的控制操作有哪些：<br>数据的安全性保护、数据的完整性检查、并发控制、数据恢复。</li>
+<li>数据库两级映像的作用：<br>外模式/模式映像：保证数据库中的数据具有较高逻辑独立性；<br>模式/内模式映像：保证数据库中的数据具有较高物理独立性；</li>
+<li>笛卡尔积：<br>又称直积，X×Y，第一个对象是X的成员而第二个对象是Y的一个成员所构成的所有可能有序对。</li>
+<li>数据库中的primary key约束和unique约束有何区别：<br>主键约束：标识数据库记录唯一性，针对主键列，不允许记录重复，且键值不为空<br>UNIQUE KEY：防止数据插入时重复，只针对非主键列，允许有空值。</li>
+</ol>
+<p><strong>计算机网络：</strong></p>
+<ol>
+<li><p>比较TCP与UDP：</p>
+</li>
+<li><p>网络协议的三个核心要素及作用：</p>
+</li>
+<li><p>解释网络体系结构，其实现和理论有何区别：</p>
+</li>
+<li><p>波特和比特的区别：</p>
+</li>
+<li><p>什么是网络时延：</p>
+</li>
+<li><p>什么是码元、码元长度：</p>
+</li>
+<li><p>结合Internet，说说有连接服务和无连接服务：</p>
+</li>
+<li><p>点对点和端到端工作在哪层，及其工作机制：</p>
+</li>
+<li><p>网络时延由哪几部分组成，各产生于何处：</p>
+</li>
+<li><p>实体，协议：</p>
+</li>
+<li><p>TCP/IP网络协议的核心是什么，如何引出“over everything”和“everything over”：</p>
+</li>
+<li><p>用白军和蓝军解释下没有100%可靠的通信：</p>
+</li>
+<li><p>电路交换与分组交换的区别：</p>
+</li>
+<li><p>DNS：</p>
+</li>
+<li><p>NAT；</p>
+</li>
+<li><p>数据链路层协议分类：</p>
+</li>
+<li><p>路由器的组成：内部构件和外部构件；</p>
+</li>
+<li><p>IPV4和IPV6的区别：</p>
+</li>
+<li><p>TCP的拥塞控制与流量控制的功能与区别：<br>拥塞控制：防止过多的数据注入到网络中，可以使网络中的路由器或链路不致过载。拥塞控制是一个全局性的过程，涉及到所有主机、路由器，以及与降低网络传输性能有关的所有因素。<br>流量控制：指点对点通信量的控制，是端到端的问题。流量控制就是抑制发送端发送数据的速率，以便使接收端来得及接收。</p>
+</li>
+<li><p>PPP协议：<br>即点到点协议，运用在数据链路层，支持全双工的同、异步链路上进行点到点的传输，主要由链路控制协议族(LCP)和网络控制协议族(NCP)组成。</p>
+</li>
+<li><p>P2P网络编程的特点：<br>P2P对等网络，是一种有别于传统C/S架构的分布式网络，用户不必连接到服务器区浏览下载文件，而是寻找对等节点建立网络连接，直接进行数据传输。</p>
+</li>
+<li><p>DNS的递归查询和迭代查询（区别）：<br>递归查询：DNS 服务器接收到客户机请求，必须使用一个准确的查询结果回复客户机。如果DNS 服务器本地没有存储查询DNS 信息，那么该服务器会询问其他服务器，并将返回的查询结果提交给客户机。<br>迭代查询：DNS 服务器会向客户机提供其他能够解析查询请求的DNS 服务器地址，当客户机发送查询请求时，DNS 服务器并不直接回复查询结果，而是告诉客户机另一台DNS 服务器地址，客户机再向这台DNS 服务器提交请求，依次循环直到返回查询的结果为止。</p>
+</li>
+<li><p>ARP协议的过程：<br>即地址解析协议，是根据IP地址获取物理地址的一个TCP/IP协议。主机发送信息时将包含目标IP地址的ARP请求广播到网络上的所有主机，并接收返回消息，以此确定目标的物理地址；收到返回消息后将该IP地址和物理地址存入本机ARP缓存并保留一定时间，下次请求时直接查询ARP缓存以节约资源。</p>
+</li>
+<li><p>计算机网络的接入类型有哪些：<br>局域网、城域网、广域网、互联网</p>
+</li>
+<li><p>中继器、集线器、交换机、网桥、网关、路由器的功能作用，区别是什么：<br>(集线器、路由器和交换机有何区别)<br>(集线器、交换机、路由器各工作在哪层)<br>中继器：物理层，简单的信号放大器；<br>集线器：物理层，用于信号放大和连接多个终端；<br>交换机：数据链路层，有多个端口以连接各个主机，使用物理地址(MAC)，转发数据较快；<br>网桥：数据链路层，将两个局域网连起来，根据MAC地址来转发数据帧；<br>网关：网络层以上实现网络互连，是连接两个不同网络的接口；<br>路由器：网络层，阻止广播，安全性高，是用逻辑地址(IP)，转发数据较慢。</p>
+</li>
+<li><p>IP和MAC特点：<br>MAC地址存放在MAC帧首部，是数据链路层和物理层使用的地址；<br>IP地址存放在IP数据报的首部，IP数据报是MAC帧的数据，IP是网络层及以上各层使用的地址，是一种逻辑地址。</p>
+</li>
+<li><p>多路复用与多路分解：<br>多路复用：从源主机的不同套接字中收集数据块，并为每个数据块封装上首部信息从而生成报文段，然后将报文段传递到网络层；<br>多路分解：将运输层报文段中的数据交付到正确的套接字。</p>
+</li>
+<li><p>计算机网络接入方式？举例说明：<br>电话线(ADSL接入)；<br>有线电视网(光纤同轴混合接入(HFC))；<br>无线的WiFi接入；<br>光纤接入(FTTX)。</p>
+</li>
+<li><p>什么是虚电路网络，什么是数据报网络：<br>虚电路网络：两个通信主机在通信之前事先建立一条通道线路，所有分组都将沿这条线路有序传输。但这个线路上的某个路由器或者链路也可以为其他用户进行服务；<br>数据报网络：将要发送的数据分为许多分组进行独立发送，在发送过程中各个分组各自走自己的路线。</p>
+</li>
+<li><p>简述C/S和P2P混合结构的特点：<br>网络上每台主机既是服务器又是客户端。</p>
+</li>
+<li><p>公司配置域名服务器，该如何配置：<br>代理商注册域名，域名申请成功后做域名解析，绑定IP地址。</p>
+</li>
+<li><p>计算机网络有哪几种校验算法：<br>循环冗余校验CRC，奇偶校验，海明码校验。</p>
+</li>
+<li><p>子网掩码和默认网关是什么及作用：<br>子网掩码是一个32位地址，用于将某个IP地址划分为网络地址和主机地址两部分，可判断任意两台计算机的IP地址是否属于同一子网络；<br>默认网关是一个用于 TCP/IP 协议的配置项，是一个可直接到达的 IP 路由器的 IP 地址。一台主机若找不到可用网关，就把数据包发给指定的默认网关，由这个网关来处理数据包。</p>
+</li>
+<li><p>网络中数据的分片与重组发生在何时：<br>(IP协议在传输数据包时会将数据报文分成若干片进行传输，并在目标系统中进行重组。)<br>如果IP数据报加上数据帧头部后大于MTU，数据报文就会分成若干片进行传输。<br>在目标系统中具有同一个ID的IP分片将会从新组装，直到接收所有片段，形成正确的顺序。</p>
+</li>
+<li><p>如何实现IPV4和IPV6的互通：<br>双IP层技术：保持IPv6与IPv4互操作性的最直接方式。适用于Internet由IPv4向IPv6过渡的前期。具有双IP层的节点成为IPv4/IPv6节点。它具有两个IP协议的完整实现。<br>隧道技术：适用于Internet由IPv4向IPv6过渡的中期。其原理是两个IPv6的网络之间的中间网络的多协议路由器接收到源主机的IP包时，将其放入中间网络层数据包在和域中，当其到达中间网络另一端多协议路由器时再恢复源IP包并转发到目的主机。<br>报头翻译技术：当Internet中只有极少数IPv4节点时（过渡阶段后期），报头翻译技术可以保持IPv6与IPv4节点间的通讯。向IPv4节点发送消息时，路径上最后一个IPv6/IPv4路由器发现目的地址是IPv4映射地址则进行报头翻译，将IPv6报头替换成IPv4报头，并转发到目的IPv4节点。</p>
+</li>
+<li><p>UDP和TCP套接字编程的区别：<br>UDP程序结构更简单，对系统资源的要求更少；<br>TCP保证数据正确性，UDP可能丢包；<br>TCP保证数据顺序，UDP不保证。</p>
+</li>
+<li><p>发送序号和确认序号的作用：<br>发送方发送序号作为数据包的唯一标示，保证了传输数据包的顺序，同时接收方通过确认序号来保证所有传输的数据按照正常顺序重组，从而保障数据传输的完整。</p>
+</li>
+<li><p>TCP建立连接：即三次握手。<br>第一次握手：客户端发送同步包到服务器；</p>
+<p>第二次握手：服务器收到同步包，必须确认客户的同步请求，同时也发送一个同步确认包（ask=k）；</p>
+<p>第三次握手：客户端收到服务器的同步确认包，向服务器发送确认包。三次握手完成后，客户端和服务器就建立了tcp连接。</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>record</category>
+      </categories>
+      <tags>
+        <tag>think</tag>
+      </tags>
   </entry>
 </search>
